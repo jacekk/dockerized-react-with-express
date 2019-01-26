@@ -18,3 +18,8 @@ services:
     volumes:
       - './client:/var/app'
       - '/var/app/node_modules'
+      - 'npm-cache:/root/.npm'
+
+volumes:
+  npm-cache: # https://itnext.io/npm-install-with-cache-in-docker-4bb85283fa12
+    external: false
