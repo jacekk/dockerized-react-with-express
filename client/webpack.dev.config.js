@@ -1,14 +1,14 @@
-var path = require('path');
+var path = require('path')
 
 module.exports = {
+    mode: 'development',
     entry: './src/index.js',
     devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname),
         filename: 'bundle.js',
-        libraryTarget: 'umd'
+        libraryTarget: 'umd',
     },
-
     devServer: {
         compress: true,
         contentBase: path.resolve(__dirname),
@@ -17,14 +17,13 @@ module.exports = {
         open: false,
         port: 7777,
     },
-
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components|build)/,
-                use: 'babel-loader'
-            }
-        ]
-    }
+                use: 'babel-loader',
+            },
+        ],
+    },
 }
