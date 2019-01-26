@@ -1,5 +1,5 @@
 {
-  "name": "simple-react-with-node--client",
+  "name": "dockerized-react-with-node--client",
   "version": "0.1.0",
   "main": "src/index.js",
   "scripts": {

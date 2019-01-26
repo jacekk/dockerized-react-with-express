@@ -1,4 +1,4 @@
-# Simple React with ExpressJS
+# Dockerized React with ExpressJS
 
 ### Requirements:
 

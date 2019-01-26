@@ -1,5 +1,5 @@
 {
-  "name": "simple-react-with-node--server",
+  "name": "dockerized-react-with-node--server",
   "version": "0.1.0",
   "description": "",
   "main": "src/server.js",
