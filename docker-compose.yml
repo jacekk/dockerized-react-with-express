@@ -1,0 +1,20 @@
+version: '3'
+services:
+  server:
+    build: ./server
+    command: npm start
+    container_name: server-express-app
+    ports:
+      - 8888:8888
+    volumes:
+      - './server:/var/app'
+      - '/var/app/node_modules'
+  client:
+    build: ./client
+    command: npm start
+    container_name: client-react-app
+    ports:
+      - 7777:7777
+    volumes:
+      - './client:/var/app'
+      - '/var/app/node_modules'
